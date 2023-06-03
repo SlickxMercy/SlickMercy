@@ -25,3 +25,11 @@ pip install art
 cd storage/downloads
 
 git clone https://github.com/SlickxMercy/SlickMercy
+
+# Puerto 
+pueden cambiar el puerto para obtener camaras de distintos puertos
+modificando la linea;
+async def check_camera(ip, usernames, passwords, port=81):
+
+recuerda que también lo debes hacer en HostSlick.py 
+en la linea
