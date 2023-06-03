@@ -16,7 +16,7 @@ import aiohttp
 import base64
 from art import *
 
-async def check_camera(ip, usernames, passwords, port=81):
+async def check_camera(ip, usernames, passwords, port=80):
     try:
         async with aiohttp.ClientSession() as session:
             headers = {
