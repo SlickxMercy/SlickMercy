@@ -1,7 +1,10 @@
 # SlickMercy
 TG: SlickMercy 
 
-#instalacion 
+# Termux 
+Descarga termux de F-Droid
+
+# instalacion 
 
 termux-setup-storage
 
