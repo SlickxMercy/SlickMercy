@@ -29,7 +29,8 @@ git clone https://github.com/SlickxMercy/SlickMercy
 # Puerto 
 pueden cambiar el puerto para obtener camaras de distintos puertos
 modificando la linea;
-async def check_camera(ip, usernames, passwords, port=81):
+async def check_camera(ip, usernames, passwords, port=80):
 
 recuerda que también lo debes hacer en HostSlick.py 
-en la linea
+en la linea:
+sock.connect((ip, 80))
