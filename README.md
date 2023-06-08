@@ -24,6 +24,8 @@ pip install aiohttp
 
 pip install art
 
+pip install pycryptodome
+
 cd storage/downloads
 
 git clone https://github.com/SlickxMercy/SlickMercy
