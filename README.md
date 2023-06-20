@@ -1,17 +1,16 @@
 # SlickMercy
+
 TG: SlickMercy 
 
-# Hack camaras hikvision (Android)
+## Hackeo de cámaras Hikvision en Android usando Termux
 
-# Termux 
-Descarga termux de F-Droid
-(importante)
+### Termux 
+1. Descarga Termux desde F-Droid (es importante obtenerlo de esta fuente).
 
-# instalacion 
-ejecuta los siguientes comando en termux por orden para evitar errores 
-copien y peguen uno por uno 
+### Instalación 
+Ejecuta los siguientes comandos en Termux en el orden indicado para evitar errores. Copia y pega uno por uno.
 
-
+```bash
 termux-setup-storage
 
 pkg install python
@@ -33,32 +32,37 @@ pip install pycryptodome
 cd storage/download
 
 git clone https://github.com/SlickxMercy/SlickMercy
+```
 
-# Ejecutar codigos 
-cuando termines de ejecutar los comandos anteriores 
+### Ejecución de los códigos 
+Una vez que hayas terminado de ejecutar los comandos anteriores, sigue las instrucciones a continuación para acceder a la carpeta de descargas.
 
-entra a la carpeta de descargas, para eso sigue los siguientes comandos
+1. Ingresa a la carpeta de descargas utilizando los siguientes comandos:
 
-ls (para ver las carpetas)
-cd (para abrir la carpeta 
+```bash
+ls     # Para ver las carpetas
+cd     # Para abrir la carpeta
 
-comunmente la carpeta de descargas se abre con este comando 
-
+# Comúnmente, la carpeta de descargas se abre con este comando:
 cd storage/download
-ls (para ver las carpetas)
-cd SlickMercy (para entrar a la carpeta)
 
-encontraras los scripts, el primero en ejecutar serian HostSlick.py para escanear el rango de ips (las ips la puedes obtener buscando hikvision en shodan.io)
+ls     # Para ver las carpetas
+cd SlickMercy     # Para entrar a la carpeta
+```
 
+2. Dentro de la carpeta, encontrarás los scripts. El primero que debes ejecutar es `HostSlick.py`, que se utiliza para escanear el rango de direcciones IP (puedes obtener las IPs buscando "Hikvision" en shodan.io).
+
+```bash
 python HostSlick.py
-este sirve para escanear puertos y obtener una lista de host (primero debes colocar la ip inicial por ejemplo 187.140.0.0 das enter y colocas la ip final 187.140.250.250 enter y empezara a scanear)
+```
 
-segundo script 
+Este script escanea puertos y genera una lista de hosts. Para su ejecución, debes ingresar la IP inicial (por ejemplo, 187.140.0.0) y la IP final (por ejemplo, 187.140.250.250). Una vez ingresadas, el escaneo comenzará.
 
+3. El segundo script que debes ejecutar es `ScanSlick.py`. Este script escanea la lista de direcciones IP almacenadas en el archivo llamado `host.txt` y verifica las credenciales. Cuando se encuentra un acceso válido, se guardan capturas de pantalla en la carpeta llamada `pics`. En el nombre de la imagen, encontrarás la IP, el usuario y la contraseña.
+
+```bash
 python ScanSlick.py
-sirve para escanear la listas del archivo llamado host.txt y hace comprobaciónes de credenciales, cuando el acceso es correcto se guardan snapshots en la carpeta llamada pics 
-en el nombre de la imagen encontras la ip, usuario y contraseña 
+```
 
-# Update 
-script vulnerabilidad.py
-comprueba camaras que tienen una vulnerabilidad y obtiene la contraseña de la cámara (por ahora no guarda las snapshot de las cámaras)
+### Actualización 
+El script `vulnerabilidad.py` comprueba las cámaras que presentan una vulnerabilidad y obtiene la contraseña de la cámara. Por el momento, no guarda las capturas de pantalla de las cámaras.
