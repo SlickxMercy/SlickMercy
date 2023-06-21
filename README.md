@@ -5,7 +5,7 @@ TG: SlickMercy
 ## Hackeo de cámaras Hikvision en Android usando Termux
 
 ### Termux 
-1. Descarga Termux desde F-Droid (es importante obtenerlo de esta fuente).
+1. Descarga Termux desde F-Droid (es importante obtenerlo de esta app).
 
 ### Instalación 
 Ejecuta los siguientes comandos en Termux en el orden indicado para evitar errores. Copia y pega uno por uno.
