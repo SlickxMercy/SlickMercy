@@ -65,4 +65,4 @@ python ScanSlick.py
 ```
 
 ### Actualización 
-El script `vulnerabilidad.py` comprueba las cámaras que presentan una vulnerabilidad y obtiene la contraseña de la cámara. Por el momento, no guarda las capturas de pantalla de las cámaras.
+El script `vulnerabilidad.py` comprueba las cámaras que presentan una vulnerabilidad y obtiene la contraseña de la cámara. guarda las snapshot es la carpeta VDB
