@@ -29,6 +29,8 @@ pip install art
 
 pip install pycryptodome
 
+pip install requests
+
 cd storage/downloads
 
 git clone https://github.com/SlickxMercy/SlickMercy
