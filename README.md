@@ -1,6 +1,6 @@
 # SlickMercy
 
-TG: SlickMercy 
+TELEGRAM: SlickMercy 
 
 ## Hackeo de cámaras Hikvision en Android usando Termux
 
