@@ -68,3 +68,10 @@ python ScanSlick.py
 
 ### Actualización 
 El script `vulnerabilidad.py` comprueba las cámaras que presentan una vulnerabilidad y obtiene la contraseña de la cámara. guarda las snapshot es la carpeta VDB
+
+### Consejos Adicionales
+Si deseas detener la ejecución del script en cualquier momento, puedes presionar Ctrl + C.
+
+Asegúrate de tener una conexión a Internet activa en tu dispositivo Android para que el script pueda acceder a las cámaras en línea.
+
+Mantén tus archivos de contraseñas y usuarios (pass.txt y user.txt) actualizados con la información correcta.
