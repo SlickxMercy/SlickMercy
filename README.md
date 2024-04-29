@@ -60,10 +60,10 @@ python HostSlick.py
 
 Este script escanea puertos y genera una lista de hosts. Para su ejecución, debes ingresar la IP inicial (por ejemplo, 187.140.0.0) y la IP final (por ejemplo, 187.140.250.250). Una vez ingresadas, el escaneo comenzará.
 
-3. El segundo script que debes ejecutar es `ScanSlick.py`. Este script escanea la lista de direcciones IP almacenadas en el archivo llamado `host.txt` y verifica las credenciales. Cuando se encuentra un acceso válido, se guardan capturas de pantalla en la carpeta llamada `pics`. En el nombre de la imagen, encontrarás la IP, el usuario y la contraseña.
+3. El segundo script que debes ejecutar es `ScanMercy.py`. Este script escanea la lista de direcciones IP almacenadas en el archivo llamado `host.txt` y verifica las credenciales. Cuando se encuentra un acceso válido, se guardan capturas de pantalla en la carpeta llamada `pics`. En el nombre de la imagen, encontrarás la IP, el usuario y la contraseña.
 
 ```bash
-python ScanSlick.py
+python SlickMercy.py
 ```
 
 ### Actualización 
